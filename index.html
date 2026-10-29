@@ -30,9 +30,10 @@ input[type=checkbox]{vertical-align:middle}
 <div>
   <label><input type="checkbox" id="exclude9" checked> フレアIX以上取得済みを除外</label>
   <label><input type="checkbox" id="excludeIn"> フレア対象（TOP30）入りの曲を除外</label>
+  <label>カテゴリ <select id="cat"><option value="">全部</option><option>CLASSIC</option><option>WHITE</option><option>GOLD</option></select></label>
   <label>表示数 <select id="limit"><option>10</option><option selected>20</option><option>50</option><option value="9999">全部</option></select></label>
 </div>
-<p class="sub">難易度表の易しい順に並べています。チェックボックスで「フレアIX取得済み」を付けると記録されます（このブラウザに保存）。</p>
+<p class="sub">3icecream の難易度表（16.00 が最も易しい）の易しい順に並べています。チェックボックスで「フレアIX取得済み」を付けると記録されます（このブラウザに保存）。</p>
 <div id="suggest"></div>
 
 <h2>難易度表を取り込む</h2>
@@ -78,7 +79,7 @@ function owned(){ // Lv16 entries already in TOP30
 function render(){
   const flare9=LS.get('flare9',{});
   const ex9=document.getElementById('exclude9').checked, exIn=document.getElementById('excludeIn').checked;
-  const limit=+document.getElementById('limit').value, own=owned();
+  const catF=document.getElementById('cat').value, limit=+document.getElementById('limit').value, own=owned();
   let n=0, html='<table>';
   for(const t of table.tiers){
     const rows=[];
@@ -86,11 +87,12 @@ function render(){
       const k=key(c), o=own.get(k);
       if(ex9&&flare9[k]) continue;
       if(exIn&&o) continue;
+      const cat=c.category||o?.cat; if(catF&&cat!==catF) continue;
       if(n>=limit) break;
       n++;
       rows.push(`<tr><td><input type="checkbox" data-k="${k}" ${flare9[k]?'checked':''} title="フレアIX取得済み"></td>
         <td>${c.title}</td><td class="sub">${c.difficulty||''}</td>
-        <td>${o?`<span class="tag in">${o.cat} ${o.skill}</span>`:'<span class="tag">対象外</span>'}</td></tr>`);
+        <td>${o?`<span class="tag in">${o.cat} ${o.skill}</span>`:`<span class="tag">${cat||''} 対象外</span>`}</td></tr>`);
     }
     if(rows.length) html+=`<tr><td colspan="4" class="tier">${t.name}</td></tr>`+rows.join('');
     if(n>=limit) break;
@@ -120,7 +122,7 @@ document.getElementById('import').onclick=()=>{
   render();
 };
 document.getElementById('reset').onclick=async()=>{try{localStorage.removeItem('lv16')}catch{} table=await (await fetch('data/lv16.json')).json(); render()};
-['exclude9','excludeIn','limit'].forEach(id=>document.getElementById(id).onchange=render);
+['exclude9','excludeIn','limit','cat'].forEach(id=>document.getElementById(id).onchange=render);
 
 (async()=>{
   skill=await (await fetch('data/flare_skill.json')).json();
