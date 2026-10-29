@@ -1,0 +1,565 @@
+{
+  "player": {
+    "name": "462",
+    "community_nickname": "しろにく"
+  },
+  "style": "SINGLE",
+  "total": 85626,
+  "categories": {
+    "CLASSIC": {
+      "total": 28350,
+      "songs": [
+        {
+          "title": "D2R",
+          "difficulty": "CHALLENGE",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "exotic ethnic",
+          "difficulty": "CHALLENGE",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "TRIP MACHINE～luv mix～",
+          "difficulty": "CHALLENGE",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "PARANOiA KCET ～clean mix～",
+          "difficulty": "CHALLENGE",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "TRUE♥LOVE",
+          "difficulty": "CHALLENGE",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "murmur twins",
+          "difficulty": "CHALLENGE",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "tokyoEVOLVED (TYPE2)",
+          "difficulty": "EXPERT",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "tokyoEVOLVED (TYPE1)",
+          "difficulty": "EXPERT",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "Healing Vision ～Angelic mix～",
+          "difficulty": "CHALLENGE",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "New York EVOLVED (Type B)",
+          "difficulty": "EXPERT",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "HAPPY☆ANGEL",
+          "difficulty": "CHALLENGE",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "snow prism",
+          "difficulty": "CHALLENGE",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "MAXX UNLIMITED",
+          "difficulty": "EXPERT",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "Gamelan de Couple",
+          "difficulty": "CHALLENGE",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "月光蝶",
+          "difficulty": "CHALLENGE",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "CANDY☆",
+          "difficulty": "CHALLENGE",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "Destiny lovers",
+          "difficulty": "CHALLENGE",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "New York EVOLVED (Type C)",
+          "difficulty": "EXPERT",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "on the bounce",
+          "difficulty": "CHALLENGE",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "冥",
+          "difficulty": "EXPERT",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "CaptivAte～誓い～",
+          "difficulty": "CHALLENGE",
+          "level": 15,
+          "skill": 924
+        },
+        {
+          "title": "Abyss",
+          "difficulty": "CHALLENGE",
+          "level": 15,
+          "skill": 924
+        },
+        {
+          "title": "Get Back Up!",
+          "difficulty": "CHALLENGE",
+          "level": 15,
+          "skill": 924
+        },
+        {
+          "title": "Quick Master",
+          "difficulty": "CHALLENGE",
+          "level": 15,
+          "skill": 924
+        },
+        {
+          "title": "BRE∀K DOWN！",
+          "difficulty": "CHALLENGE",
+          "level": 15,
+          "skill": 924
+        },
+        {
+          "title": "osaka EVOLVED -毎度、おおきに！- (TYPE1)",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 924
+        },
+        {
+          "title": "osaka EVOLVED -毎度、おおきに！- (TYPE2)",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 924
+        },
+        {
+          "title": "BE LOVIN",
+          "difficulty": "CHALLENGE",
+          "level": 15,
+          "skill": 924
+        },
+        {
+          "title": "Holic",
+          "difficulty": "CHALLENGE",
+          "level": 15,
+          "skill": 924
+        },
+        {
+          "title": "The legend of MAX",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 924
+        }
+      ]
+    },
+    "WHITE": {
+      "total": 28397,
+      "songs": [
+        {
+          "title": "Elemental Creation",
+          "difficulty": "EXPERT",
+          "level": 17,
+          "skill": 977
+        },
+        {
+          "title": "ZEPHYRANTHES",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "starmine",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "IN BETWEEN",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "Sakura Reflection",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "Chinese Snowy Dance",
+          "difficulty": "EXPERT",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "Idola",
+          "difficulty": "EXPERT",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "黒髪乱れし修羅となりて～凛 edition～",
+          "difficulty": "CHALLENGE",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "ラクガキスト",
+          "difficulty": "CHALLENGE",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "POSSESSION (20th Anniversary Mix)",
+          "difficulty": "EXPERT",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "Ishtar",
+          "difficulty": "CHALLENGE",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "KHAMEN BREAK",
+          "difficulty": "EXPERT",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "ANNIVERSARY ∴∵∴ ←↓↑→",
+          "difficulty": "EXPERT",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "Start a New Day",
+          "difficulty": "CHALLENGE",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "Love You More",
+          "difficulty": "EXPERT",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "True Blue",
+          "difficulty": "EXPERT",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "Life is beautiful",
+          "difficulty": "EXPERT",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "朧 (dj TAKA Remix)",
+          "difficulty": "CHALLENGE",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "Come to Life",
+          "difficulty": "EXPERT",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "POSSESSION(EDP Live Mix)",
+          "difficulty": "EXPERT",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "GAIA",
+          "difficulty": "EXPERT",
+          "level": 16,
+          "skill": 954
+        },
+        {
+          "title": "エンドルフィン",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 924
+        },
+        {
+          "title": "THE REASON",
+          "difficulty": "CHALLENGE",
+          "level": 15,
+          "skill": 924
+        },
+        {
+          "title": "Astrogazer",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 924
+        },
+        {
+          "title": "激アツ☆マジヤバ☆チアガール",
+          "difficulty": "CHALLENGE",
+          "level": 15,
+          "skill": 924
+        },
+        {
+          "title": "Stella Sinistra",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 924
+        },
+        {
+          "title": "Emera",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 924
+        },
+        {
+          "title": "out of focus",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 924
+        },
+        {
+          "title": "Squeeze",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 924
+        },
+        {
+          "title": "ACE FOR ACES",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 924
+        }
+      ]
+    },
+    "GOLD": {
+      "total": 28879,
+      "songs": [
+        {
+          "title": "Step This Way",
+          "difficulty": "CHALLENGE",
+          "level": 17,
+          "skill": 977
+        },
+        {
+          "title": "DUAL STRIKER",
+          "difficulty": "EXPERT",
+          "level": 17,
+          "skill": 977
+        },
+        {
+          "title": "Megalara Garuda",
+          "difficulty": "EXPERT",
+          "level": 17,
+          "skill": 977
+        },
+        {
+          "title": "I-W-U (I Want U)",
+          "difficulty": "EXPERT",
+          "level": 17,
+          "skill": 977
+        },
+        {
+          "title": "SMASH",
+          "difficulty": "EXPERT",
+          "level": 17,
+          "skill": 977
+        },
+        {
+          "title": "Finale",
+          "difficulty": "CHALLENGE",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "Better Than Me",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "童話回廊",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "テトリス",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "Dual Bladez",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "Surrender (PureFocus remix)",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "COSMIC V3LOCITY",
+          "difficulty": "DIFFICULT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "Can't Stop Running!!",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "Racing with Time (NAOKI's 999 remix)",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "朱と碧のランページ",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "Wizards!",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "ロマンシングエスケープ",
+          "difficulty": "CHALLENGE",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "PERSIAN LAND",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "Our Soul",
+          "difficulty": "CHALLENGE",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "little steps",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "MANA",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "きらきら☆ユニバース",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "ミックスナッツ",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "ヤサイマシ☆ニンニクアブラオオメ",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "雪上断火",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "ポチコの幸せな日常",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "勇者",
+          "difficulty": "CHALLENGE",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "My Drama",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "惑星☆ロリポップ",
+          "difficulty": "EXPERT",
+          "level": 15,
+          "skill": 960
+        },
+        {
+          "title": "Steps for Victory (U1 Heavy Metal Edition)",
+          "difficulty": "EXPERT",
+          "level": 16,
+          "skill": 954
+        }
+      ]
+    }
+  }
+}
