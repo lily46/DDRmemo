@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DDR Flare Memo</title>
+<style>
+:root{--bg:#fff;--fg:#222;--sub:#666;--line:#ddd;--acc:#d6336c;--chip:#f3f3f3}
+@media (prefers-color-scheme:dark){:root{--bg:#16161a;--fg:#eee;--sub:#999;--line:#333;--acc:#ff6b9a;--chip:#26262c}}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,sans-serif}
+main{max-width:880px;margin:auto;padding:16px}
+h1{font-size:1.3rem;margin:.2em 0}h2{font-size:1.05rem;border-bottom:1px solid var(--line);padding-bottom:4px;margin-top:1.6em}
+.sub{color:var(--sub);font-size:.85rem}
+table{width:100%;border-collapse:collapse}td,th{padding:5px 6px;border-bottom:1px solid var(--line);text-align:left}
+td.n{text-align:right;font-variant-numeric:tabular-nums}
+.tier{background:var(--chip);font-weight:600}
+.tag{font-size:.75rem;padding:1px 6px;border-radius:8px;background:var(--chip);white-space:nowrap}
+.tag.in{color:var(--acc)}
+textarea{width:100%;box-sizing:border-box;min-height:140px;font:13px monospace;background:var(--bg);color:var(--fg);border:1px solid var(--line)}
+label{margin-right:1em;white-space:nowrap}button{font:inherit}
+input[type=checkbox]{vertical-align:middle}
+</style>
+</head>
+<body>
+<main>
+<h1>DDR Flare Memo</h1>
+<div id="summary" class="sub"></div>
+
+<h2>Lv16 サジェスト</h2>
+<div>
+  <label><input type="checkbox" id="exclude9" checked> フレアIX以上取得済みを除外</label>
+  <label><input type="checkbox" id="excludeIn"> フレア対象（TOP30）入りの曲を除外</label>
+  <label>表示数 <select id="limit"><option>10</option><option selected>20</option><option>50</option><option value="9999">全部</option></select></label>
+</div>
+<p class="sub">難易度表の易しい順に並べています。チェックボックスで「フレアIX取得済み」を付けると記録されます（このブラウザに保存）。</p>
+<div id="suggest"></div>
+
+<h2>難易度表を取り込む</h2>
+<p class="sub">1行1譜面で貼り付け。<code>## 地力S+</code> のように <code>##</code> で始まる行が段位の見出し（易しい順に並べる）。
+譜面行は <code>曲名</code> または <code>曲名 [TAB] 譜面</code>（例: <code>Ishtar	CSP</code>）。</p>
+<textarea id="paste" placeholder="## 易
+Ishtar	CSP
+GAIA	ESP
+## 普通
+..."></textarea>
+<button id="import">取り込む</button> <button id="reset">取り込み内容をリセット</button>
+<span id="msg" class="sub"></span>
+
+<h2>現在のフレアスキル</h2>
+<div id="current"></div>
+</main>
+<script>
+const LS = {get(k,d){try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch{}}};
+const norm = s => s.normalize('NFKC').toLowerCase().replace(/\s+/g,'');
+const DIFF = {BSP:'BASIC',DSP:'DIFFICULT',ESP:'EXPERT',CSP:'CHALLENGE'};
+let skill, table;
+
+function parseTable(text){
+  const tiers=[]; let cur=null;
+  for(const raw of text.split(/\r?\n/)){
+    const line=raw.trim(); if(!line) continue;
+    if(line.startsWith('#')){cur={name:line.replace(/^#+\s*/,''),charts:[]};tiers.push(cur);continue}
+    if(!cur){cur={name:'(未分類)',charts:[]};tiers.push(cur)}
+    const [title,d]=line.split('\t');
+    cur.charts.push({title:title.trim(),difficulty:d?(DIFF[d.trim().toUpperCase()]||d.trim().toUpperCase()):null});
+  }
+  return tiers;
+}
+const key = c => norm(c.title)+'|'+(c.difficulty||'');
+
+function owned(){ // Lv16 entries already in TOP30
+  const m=new Map();
+  for(const [cat,c] of Object.entries(skill.categories))
+    for(const s of c.songs) m.set(norm(s.title)+'|'+s.difficulty,{...s,cat}), m.set(norm(s.title)+'|',{...s,cat});
+  return m;
+}
+
+function render(){
+  const flare9=LS.get('flare9',{});
+  const ex9=document.getElementById('exclude9').checked, exIn=document.getElementById('excludeIn').checked;
+  const limit=+document.getElementById('limit').value, own=owned();
+  let n=0, html='<table>';
+  for(const t of table.tiers){
+    const rows=[];
+    for(const c of t.charts){
+      const k=key(c), o=own.get(k);
+      if(ex9&&flare9[k]) continue;
+      if(exIn&&o) continue;
+      if(n>=limit) break;
+      n++;
+      rows.push(`<tr><td><input type="checkbox" data-k="${k}" ${flare9[k]?'checked':''} title="フレアIX取得済み"></td>
+        <td>${c.title}</td><td class="sub">${c.difficulty||''}</td>
+        <td>${o?`<span class="tag in">${o.cat} ${o.skill}</span>`:'<span class="tag">対象外</span>'}</td></tr>`);
+    }
+    if(rows.length) html+=`<tr><td colspan="4" class="tier">${t.name}</td></tr>`+rows.join('');
+    if(n>=limit) break;
+  }
+  html+='</table>';
+  document.getElementById('suggest').innerHTML = table.tiers.length ? (n?html:'<p class="sub">該当なし</p>') : '<p class="sub">難易度表がまだありません。下の「難易度表を取り込む」から貼り付けてください。</p>';
+  document.querySelectorAll('#suggest input[data-k]').forEach(el=>el.onchange=()=>{
+    const f=LS.get('flare9',{}); el.checked?f[el.dataset.k]=1:delete f[el.dataset.k]; LS.set('flare9',f); render();
+  });
+}
+
+function renderCurrent(){
+  document.getElementById('summary').textContent=`${skill.player.name}（${skill.player.community_nickname}） / ${skill.style} TOTAL ${skill.total.toLocaleString()}`;
+  let h='';
+  for(const [cat,c] of Object.entries(skill.categories)){
+    h+=`<details><summary><b>${cat}</b> ${c.total.toLocaleString()}（最低 ${Math.min(...c.songs.map(s=>s.skill))}）</summary><table>`+
+      c.songs.map(s=>`<tr><td>${s.title}</td><td class="sub">${s.difficulty} Lv.${s.level}</td><td class="n">${s.skill}</td></tr>`).join('')+'</table></details>';
+  }
+  document.getElementById('current').innerHTML=h;
+}
+
+document.getElementById('import').onclick=()=>{
+  const tiers=parseTable(document.getElementById('paste').value);
+  if(!tiers.length) return;
+  table={...table,tiers}; LS.set('lv16',table);
+  document.getElementById('msg').textContent=`${tiers.length}段 / ${tiers.reduce((a,t)=>a+t.charts.length,0)}譜面を取り込みました`;
+  render();
+};
+document.getElementById('reset').onclick=async()=>{try{localStorage.removeItem('lv16')}catch{} table=await (await fetch('data/lv16.json')).json(); render()};
+['exclude9','excludeIn','limit'].forEach(id=>document.getElementById(id).onchange=render);
+
+(async()=>{
+  skill=await (await fetch('data/flare_skill.json')).json();
+  const base=await (await fetch('data/lv16.json')).json();
+  const saved=LS.get('lv16',null);
+  table = saved&&saved.tiers?.length ? saved : base;
+  renderCurrent(); render();
+})();
+</script>
+</body>
+</html>
