@@ -28,12 +28,12 @@ input[type=checkbox]{vertical-align:middle}
 
 <h2>Lv16 サジェスト</h2>
 <div>
-  <label><input type="checkbox" id="exclude9" checked> フレアIX以上取得済みを除外</label>
+  <label>除外: <select id="exclRank"><option value="99">しない</option><option value="10">フレアEX</option><option value="9" selected>フレアIX以上</option><option value="8">フレアVIII以上</option><option value="7">フレアVII以上</option></select></label>
   <label><input type="checkbox" id="excludeIn"> フレア対象（TOP30）入りの曲を除外</label>
   <label>カテゴリ <select id="cat"><option value="">全部</option><option>CLASSIC</option><option>WHITE</option><option>GOLD</option></select></label>
   <label>表示数 <select id="limit"><option>10</option><option selected>20</option><option>50</option><option value="9999">全部</option></select></label>
 </div>
-<p class="sub">3icecream の難易度表（16.00 が最も易しい）の易しい順に並べています。チェックボックスで「フレアIX取得済み」を付けると記録されます（このブラウザに保存）。</p>
+<p class="sub">3icecream の難易度表（16.00 が最も易しい）の易しい順に並べています。各行のプルダウンで取得済みフレアランクを指定できます（このブラウザに保存）。</p>
 <div id="suggest"></div>
 
 <h2>難易度表を取り込む</h2>
@@ -46,6 +46,10 @@ GAIA	ESP
 ..."></textarea>
 <button id="import">取り込む</button> <button id="reset">取り込み内容をリセット</button>
 <span id="msg" class="sub"></span>
+
+<h2>フレアランクの保存・共有</h2>
+<p class="sub">書き出したファイルを <code>data/flare_ranks.json</code> としてリポジトリに置くと、どの端末でも初期値として読み込まれます。</p>
+<button id="export">書き出し</button> <label><input type="file" id="importRanks" accept=".json"> 読み込み</label>
 
 <h2>現在のフレアスキル</h2>
 <div id="current"></div>
@@ -77,20 +81,19 @@ function owned(){ // Lv16 entries already in TOP30
 }
 
 function render(){
-  const flare9=LS.get('flare9',{});
-  const ex9=document.getElementById('exclude9').checked, exIn=document.getElementById('excludeIn').checked;
+  const exR=+document.getElementById('exclRank').value, exIn=document.getElementById('excludeIn').checked;
   const catF=document.getElementById('cat').value, limit=+document.getElementById('limit').value, own=owned();
   let n=0, html='<table>';
   for(const t of table.tiers){
     const rows=[];
     for(const c of t.charts){
       const k=key(c), o=own.get(k);
-      if(ex9&&flare9[k]) continue;
+      if((ranks[k]??-1)>=exR) continue;
       if(exIn&&o) continue;
       const cat=c.category||o?.cat; if(catF&&cat!==catF) continue;
       if(n>=limit) break;
       n++;
-      rows.push(`<tr><td><input type="checkbox" data-k="${k}" ${flare9[k]?'checked':''} title="フレアIX取得済み"></td>
+      rows.push(`<tr><td>${rankSel(k)}</td>
         <td>${c.title}</td><td class="sub">${c.difficulty||''}</td>
         <td>${o?`<span class="tag in">${o.cat} ${o.skill}</span>`:`<span class="tag">${cat||''} 対象外</span>`}</td></tr>`);
     }
@@ -99,8 +102,18 @@ function render(){
   }
   html+='</table>';
   document.getElementById('suggest').innerHTML = table.tiers.length ? (n?html:'<p class="sub">該当なし</p>') : '<p class="sub">難易度表がまだありません。下の「難易度表を取り込む」から貼り付けてください。</p>';
-  document.querySelectorAll('#suggest input[data-k]').forEach(el=>el.onchange=()=>{
-    const f=LS.get('flare9',{}); el.checked?f[el.dataset.k]=1:delete f[el.dataset.k]; LS.set('flare9',f); render();
+  bindRanks();
+}
+const RANKS=['なし','I','II','III','IV','V','VI','VII','VIII','IX','EX'];
+let ranks={};
+function rankSel(k){
+  return `<select data-k="${k}" title="フレアランク"><option value="">-</option>`+
+    RANKS.map((r,i)=>`<option value="${i}" ${ranks[k]===i?'selected':''}>${r}</option>`).join('')+'</select>';
+}
+function bindRanks(){
+  document.querySelectorAll('select[data-k]').forEach(el=>el.onchange=()=>{
+    el.value===''?delete ranks[el.dataset.k]:ranks[el.dataset.k]=+el.value;
+    LS.set('flareRanks',ranks); render(); renderCurrent();
   });
 }
 
@@ -109,11 +122,20 @@ function renderCurrent(){
   let h='';
   for(const [cat,c] of Object.entries(skill.categories)){
     h+=`<details><summary><b>${cat}</b> ${c.total.toLocaleString()}（最低 ${Math.min(...c.songs.map(s=>s.skill))}）</summary><table>`+
-      c.songs.map(s=>`<tr><td>${s.title}</td><td class="sub">${s.difficulty} Lv.${s.level}</td><td class="n">${s.skill}</td></tr>`).join('')+'</table></details>';
+      c.songs.map(s=>`<tr><td>${rankSel(norm(s.title)+'|'+s.difficulty)}</td><td>${s.title}</td><td class="sub">${s.difficulty} Lv.${s.level}</td><td class="n">${s.skill}</td></tr>`).join('')+'</table></details>';
   }
-  document.getElementById('current').innerHTML=h;
+  document.getElementById('current').innerHTML=h; bindRanks();
 }
 
+document.getElementById('export').onclick=()=>{
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([JSON.stringify(ranks,null,1)],{type:'application/json'}));
+  a.download='flare_ranks.json'; a.click();
+};
+document.getElementById('importRanks').onchange=async e=>{
+  const f=e.target.files[0]; if(!f) return;
+  try{ranks={...ranks,...JSON.parse(await f.text())}; LS.set('flareRanks',ranks); render(); renderCurrent()}catch{alert('読み込めませんでした')}
+};
 document.getElementById('import').onclick=()=>{
   const tiers=parseTable(document.getElementById('paste').value);
   if(!tiers.length) return;
@@ -122,12 +144,15 @@ document.getElementById('import').onclick=()=>{
   render();
 };
 document.getElementById('reset').onclick=async()=>{try{localStorage.removeItem('lv16')}catch{} table=await (await fetch('data/lv16.json')).json(); render()};
-['exclude9','excludeIn','limit','cat'].forEach(id=>document.getElementById(id).onchange=render);
+['exclRank','excludeIn','limit','cat'].forEach(id=>document.getElementById(id).onchange=render);
 
 (async()=>{
   skill=await (await fetch('data/flare_skill.json')).json();
   const base=await (await fetch('data/lv16.json')).json();
   const saved=LS.get('lv16',null);
+  let fileRanks={}; try{fileRanks=await (await fetch('data/flare_ranks.json')).json()}catch{}
+  const old=LS.get('flare9',{}); for(const k in old) fileRanks[k]=Math.max(fileRanks[k]??0,9);
+  ranks={...fileRanks,...LS.get('flareRanks',{})};
   table = saved&&saved.tiers?.length ? saved : base;
   renderCurrent(); render();
 })();
