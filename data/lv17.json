@@ -1,0 +1,1098 @@
+{
+ "level": 17,
+ "source": "https://3icecream.com/difficulty_list/17",
+ "fetched": "2026-10-29",
+ "note": "tiers は易しい順（3icecream の 16.xx 表記が小さいほど易しい）。各段内も rating の昇順",
+ "tiers": [
+  {
+   "name": "17.00",
+   "charts": [
+    {
+     "title": "Step This Way",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": -0.621399
+    },
+    {
+     "title": "DUAL STRIKER",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.583606
+    },
+    {
+     "title": "プレインエイジア -PHQ remix-",
+     "difficulty": "CHALLENGE",
+     "category": "WHITE",
+     "rating": -0.562617
+    },
+    {
+     "title": "び",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.548724
+    }
+   ]
+  },
+  {
+   "name": "17.05",
+   "charts": [
+    {
+     "title": "DIGITALIZER",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.539933
+    },
+    {
+     "title": "I-W-U (I Want U)",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.520553
+    },
+    {
+     "title": "POSSESSION",
+     "difficulty": "EXPERT",
+     "category": "CLASSIC",
+     "rating": -0.516388
+    },
+    {
+     "title": "Snow Garland Fairy",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.478429
+    },
+    {
+     "title": "Roll the Dice",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": -0.476718
+    }
+   ]
+  },
+  {
+   "name": "17.10",
+   "charts": [
+    {
+     "title": "True Blue",
+     "difficulty": "CHALLENGE",
+     "category": "WHITE",
+     "rating": -0.452768
+    },
+    {
+     "title": "ONYX",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": -0.448707
+    },
+    {
+     "title": "SMASH",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.433082
+    },
+    {
+     "title": "Megalara Garuda",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.432363
+    },
+    {
+     "title": "Red. by Full Metal Jacket",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": -0.428356
+    },
+    {
+     "title": "Blind Justice ～Torn souls, Hurt Faiths ～",
+     "difficulty": "CHALLENGE",
+     "category": "CLASSIC",
+     "rating": -0.41157
+    },
+    {
+     "title": "Elemental Creation",
+     "difficulty": "EXPERT",
+     "category": "WHITE",
+     "rating": -0.411131
+    }
+   ]
+  },
+  {
+   "name": "17.15",
+   "charts": [
+    {
+     "title": "New Era",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.40088
+    },
+    {
+     "title": "Be a Hero!",
+     "difficulty": "EXPERT",
+     "category": "WHITE",
+     "rating": -0.395966
+    },
+    {
+     "title": "Glitch Angel",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.394377
+    },
+    {
+     "title": "Daisycutter",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.390339
+    },
+    {
+     "title": "No.13",
+     "difficulty": "CHALLENGE",
+     "category": "CLASSIC",
+     "rating": -0.336161
+    },
+    {
+     "title": "ΩVERSOUL",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": -0.329288
+    }
+   ]
+  },
+  {
+   "name": "17.20",
+   "charts": [
+    {
+     "title": "Complete Game Victory",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.325485
+    },
+    {
+     "title": "恋する☆宇宙戦争っ!!",
+     "difficulty": "CHALLENGE",
+     "category": "WHITE",
+     "rating": -0.31146
+    },
+    {
+     "title": "WARNING×​WARNING×​WARNING",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": -0.29003
+    },
+    {
+     "title": "quaver♪",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.289079
+    },
+    {
+     "title": "perditus†paradisus",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.27337
+    },
+    {
+     "title": "PARANOiA (kskst mix)",
+     "difficulty": "EXPERT",
+     "category": "CLASSIC",
+     "rating": -0.271864
+    },
+    {
+     "title": "Kilonova",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.266331
+    }
+   ]
+  },
+  {
+   "name": "17.25",
+   "charts": [
+    {
+     "title": "疾風迅雷",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.254354
+    },
+    {
+     "title": "Lichtsäule",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.254117
+    },
+    {
+     "title": "3y3s",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.25272
+    },
+    {
+     "title": "DIABLOSIS::Nāga",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.218629
+    },
+    {
+     "title": "恋歌疾風！かるたクイーンいろは",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": -0.213072
+    },
+    {
+     "title": "パーフェクトイーター",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.208958
+    },
+    {
+     "title": "CUE CUE RESCUE",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": -0.185977
+    }
+   ]
+  },
+  {
+   "name": "17.30",
+   "charts": [
+    {
+     "title": "Emera",
+     "difficulty": "CHALLENGE",
+     "category": "WHITE",
+     "rating": -0.159002
+    },
+    {
+     "title": "Triple Cross",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.15387
+    },
+    {
+     "title": "New Millennium",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.147238
+    },
+    {
+     "title": "Catch Our Fire!",
+     "difficulty": "EXPERT",
+     "category": "WHITE",
+     "rating": -0.129183
+    },
+    {
+     "title": "RED ZONE",
+     "difficulty": "CHALLENGE",
+     "category": "CLASSIC",
+     "rating": -0.126624
+    },
+    {
+     "title": "PRANA+REVOLUTIONARY ADDICT (U1 DJ Mix)",
+     "difficulty": "EXPERT",
+     "category": "WHITE",
+     "rating": -0.123429
+    },
+    {
+     "title": "ΔMAX",
+     "difficulty": "EXPERT",
+     "category": "CLASSIC",
+     "rating": -0.113657
+    },
+    {
+     "title": "Rampage Hero",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": -0.108519
+    },
+    {
+     "title": "AA",
+     "difficulty": "CHALLENGE",
+     "category": "CLASSIC",
+     "rating": -0.108316
+    }
+   ]
+  },
+  {
+   "name": "17.35",
+   "charts": [
+    {
+     "title": "Reach The Sky, Without you",
+     "difficulty": "EXPERT",
+     "category": "WHITE",
+     "rating": -0.101779
+    },
+    {
+     "title": "ÆTHER",
+     "difficulty": "EXPERT",
+     "category": "WHITE",
+     "rating": -0.0979979
+    },
+    {
+     "title": "Blizzard of Arrows",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": -0.0812671
+    },
+    {
+     "title": "BabeL ～Next Story～",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": -0.0715329
+    },
+    {
+     "title": "New Century",
+     "difficulty": "EXPERT",
+     "category": "WHITE",
+     "rating": -0.0488659
+    },
+    {
+     "title": "Come To m1dy",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.0452611
+    },
+    {
+     "title": "The legend of MAX(X-Special)",
+     "difficulty": "CHALLENGE",
+     "category": "CLASSIC",
+     "rating": -0.0451648
+    },
+    {
+     "title": "漆黒のスペシャルプリンセスサンデー",
+     "difficulty": "CHALLENGE",
+     "category": "WHITE",
+     "rating": -0.0414119
+    },
+    {
+     "title": "Magnetic",
+     "difficulty": "CHALLENGE",
+     "category": "WHITE",
+     "rating": -0.0368101
+    }
+   ]
+  },
+  {
+   "name": "17.40",
+   "charts": [
+    {
+     "title": "DEADLOCK -Out Of Reach-",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.021936
+    },
+    {
+     "title": "C-C-C-N-N-N",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": -0.0214793
+    },
+    {
+     "title": "輪廻の鴉",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": -0.0156142
+    },
+    {
+     "title": "RЁVOLUTIФN",
+     "difficulty": "CHALLENGE",
+     "category": "WHITE",
+     "rating": -0.0121164
+    },
+    {
+     "title": "SABER WING (Akira Ishihara Headshot mix)",
+     "difficulty": "CHALLENGE",
+     "category": "CLASSIC",
+     "rating": -0.00734472
+    },
+    {
+     "title": "Sparkle Dreams",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.00701031
+    },
+    {
+     "title": "Black Emperor",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.00619185
+    },
+    {
+     "title": "断罪のミメシス",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": -0.0052381
+    },
+    {
+     "title": "RISING FIRE HAWK",
+     "difficulty": "CHALLENGE",
+     "category": "WHITE",
+     "rating": -0.00465118
+    },
+    {
+     "title": "voltississimo",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.00371094
+    },
+    {
+     "title": "MUTEKI BUFFALO",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.012622
+    },
+    {
+     "title": "V!LLA!N",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.0130745
+    },
+    {
+     "title": "Lose Your Sense",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.0188685
+    },
+    {
+     "title": "Let's DANCE aROUND!!",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.0256839
+    },
+    {
+     "title": "mathematical good-bye",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.0313449
+    }
+   ]
+  },
+  {
+   "name": "17.45",
+   "charts": [
+    {
+     "title": "チルノのパーフェクトさんすう学園",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.039072
+    },
+    {
+     "title": "Deep tenDon Reflex",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.0442509
+    },
+    {
+     "title": "Monsters Den",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.0484573
+    },
+    {
+     "title": "Throw Out",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.0541668
+    },
+    {
+     "title": "Going Hypersonic",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.056666
+    },
+    {
+     "title": "New Generation",
+     "difficulty": "CHALLENGE",
+     "category": "WHITE",
+     "rating": 0.0958751
+    },
+    {
+     "title": "GERBERA",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.100133
+    },
+    {
+     "title": "Stand Alone Beat Masta",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.100515
+    },
+    {
+     "title": "Abrupt Madness",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.105788
+    },
+    {
+     "title": "めうめうぺったんたん！！ (ZAQUVA Remix)",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.108039
+    }
+   ]
+  },
+  {
+   "name": "17.50",
+   "charts": [
+    {
+     "title": "Proof of the existence",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.112812
+    },
+    {
+     "title": "Electronic Sports Complex",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.122135
+    },
+    {
+     "title": "ホーンテッド★メイドランチ",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.127818
+    },
+    {
+     "title": "量子の海のリントヴルム",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.13744
+    },
+    {
+     "title": "東京神話",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.14045
+    },
+    {
+     "title": "ドーパミン",
+     "difficulty": "EXPERT",
+     "category": "WHITE",
+     "rating": 0.145983
+    },
+    {
+     "title": "音楽 (STARDOM Remix)",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.155384
+    },
+    {
+     "title": "絶対零度",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.155964
+    },
+    {
+     "title": "Glitter Flatter Scatter",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.163012
+    },
+    {
+     "title": "Aria",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.167255
+    },
+    {
+     "title": "SAYONARA☆ディスコライト",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.171378
+    },
+    {
+     "title": "SkyDrive! (HASEKO EUROBEAT MIX)",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.17353
+    },
+    {
+     "title": "ORCA",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.177934
+    },
+    {
+     "title": "ウサテイ",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.181083
+    }
+   ]
+  },
+  {
+   "name": "17.55",
+   "charts": [
+    {
+     "title": "DDR TAGMIX -LAST DanceR-",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.188245
+    },
+    {
+     "title": "Triple Counter",
+     "difficulty": "EXPERT",
+     "category": "WHITE",
+     "rating": 0.195611
+    },
+    {
+     "title": "Pursuer",
+     "difficulty": "EXPERT",
+     "category": "WHITE",
+     "rating": 0.195666
+    },
+    {
+     "title": "ランカーキラーガール",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.196234
+    },
+    {
+     "title": "セツナトリップ",
+     "difficulty": "CHALLENGE",
+     "category": "WHITE",
+     "rating": 0.199122
+    },
+    {
+     "title": "Ganymede -re:born-",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.1995
+    },
+    {
+     "title": "IX",
+     "difficulty": "EXPERT",
+     "category": "WHITE",
+     "rating": 0.206856
+    },
+    {
+     "title": "Anti-Matter",
+     "difficulty": "EXPERT",
+     "category": "CLASSIC",
+     "rating": 0.21117
+    },
+    {
+     "title": "Evans",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.215784
+    },
+    {
+     "title": "chaplet",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.216246
+    },
+    {
+     "title": "MAX 300(X-Special)",
+     "difficulty": "CHALLENGE",
+     "category": "CLASSIC",
+     "rating": 0.217984
+    },
+    {
+     "title": "GLOW THE CROWN",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.225055
+    },
+    {
+     "title": "Unreal",
+     "difficulty": "CHALLENGE",
+     "category": "CLASSIC",
+     "rating": 0.234132
+    },
+    {
+     "title": "London EVOLVED ver.A",
+     "difficulty": "CHALLENGE",
+     "category": "CLASSIC",
+     "rating": 0.235896
+    },
+    {
+     "title": "未完成ノ蒸氣驅動乙女 (DDR Edition)",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.25129
+    }
+   ]
+  },
+  {
+   "name": "17.60",
+   "charts": [
+    {
+     "title": "JOMANDA",
+     "difficulty": "CHALLENGE",
+     "category": "WHITE",
+     "rating": 0.259379
+    },
+    {
+     "title": "Pluto Relinquish",
+     "difficulty": "EXPERT",
+     "category": "CLASSIC",
+     "rating": 0.260912
+    },
+    {
+     "title": "Puberty Dysthymia",
+     "difficulty": "EXPERT",
+     "category": "WHITE",
+     "rating": 0.267396
+    },
+    {
+     "title": "Smintheus",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.270568
+    },
+    {
+     "title": "Acid,Tribal & Dance (DDR EDITION)",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.281875
+    },
+    {
+     "title": "London EVOLVED ver.B",
+     "difficulty": "CHALLENGE",
+     "category": "CLASSIC",
+     "rating": 0.286128
+    },
+    {
+     "title": "London EVOLVED ver.C",
+     "difficulty": "CHALLENGE",
+     "category": "CLASSIC",
+     "rating": 0.291795
+    },
+    {
+     "title": "Fascination MAXX",
+     "difficulty": "EXPERT",
+     "category": "CLASSIC",
+     "rating": 0.299988
+    },
+    {
+     "title": "ドーパミン (STARDOM Remix)",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.301737
+    },
+    {
+     "title": "混乱少女♥そふらんちゃん!!",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.306043
+    },
+    {
+     "title": "Riot of Color",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.309869
+    },
+    {
+     "title": "Golden Arrow",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.313129
+    },
+    {
+     "title": "Good Looking",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.328627
+    }
+   ]
+  },
+  {
+   "name": "17.65",
+   "charts": [
+    {
+     "title": "Death by Glamour",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.334326
+    },
+    {
+     "title": "Komainu Adventure!",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.336379
+    },
+    {
+     "title": "Drive Away",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.342814
+    },
+    {
+     "title": "[ ]DENTITY",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.350447
+    },
+    {
+     "title": "Avenger",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.356641
+    },
+    {
+     "title": "FUNKY SUMMER BEACH",
+     "difficulty": "CHALLENGE",
+     "category": "WHITE",
+     "rating": 0.367053
+    },
+    {
+     "title": "Chromatic Burst",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.372351
+    },
+    {
+     "title": "Spanish Snowy Dance",
+     "difficulty": "CHALLENGE",
+     "category": "WHITE",
+     "rating": 0.373286
+    },
+    {
+     "title": "Idola",
+     "difficulty": "CHALLENGE",
+     "category": "WHITE",
+     "rating": 0.384088
+    },
+    {
+     "title": "SISYPHUS",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.387817
+    },
+    {
+     "title": "Fragarach",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.397115
+    },
+    {
+     "title": "AFRONOVA",
+     "difficulty": "CHALLENGE",
+     "category": "CLASSIC",
+     "rating": 0.401738
+    }
+   ]
+  },
+  {
+   "name": "17.70",
+   "charts": [
+    {
+     "title": "Eira",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.409872
+    },
+    {
+     "title": "CyberConnect",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.423262
+    },
+    {
+     "title": "ALPACORE",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.445543
+    },
+    {
+     "title": "New Decade",
+     "difficulty": "EXPERT",
+     "category": "CLASSIC",
+     "rating": 0.445627
+    },
+    {
+     "title": "The History of the Future",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.447324
+    },
+    {
+     "title": "TYPHØN",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.45794
+    },
+    {
+     "title": "If",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.464993
+    },
+    {
+     "title": "ミッドナイト☆WAR",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.469311
+    }
+   ]
+  },
+  {
+   "name": "17.75",
+   "charts": [
+    {
+     "title": "BIGソムタム",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.485292
+    },
+    {
+     "title": "New Millennium Pt.2",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.506974
+    },
+    {
+     "title": "SURVIVAL AT THE END OF THE UNIVERSE",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.526136
+    },
+    {
+     "title": "LOVE THIS FEELIN'",
+     "difficulty": "CHALLENGE",
+     "category": "CLASSIC",
+     "rating": 0.544438
+    }
+   ]
+  },
+  {
+   "name": "17.80",
+   "charts": [
+    {
+     "title": "starmine",
+     "difficulty": "CHALLENGE",
+     "category": "WHITE",
+     "rating": 0.55603
+    },
+    {
+     "title": "Chocolate Planet",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.557763
+    },
+    {
+     "title": "スーパー戦湯ババンバーン",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.56445
+    },
+    {
+     "title": "Deadly Dolly Dance",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.575984
+    },
+    {
+     "title": "Tohoku EVOLVED",
+     "difficulty": "EXPERT",
+     "category": "CLASSIC",
+     "rating": 0.582362
+    },
+    {
+     "title": "Don't Stop The HYPERCORE",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.584107
+    },
+    {
+     "title": "CHAOS Terror-Tech Mix",
+     "difficulty": "CHALLENGE",
+     "category": "WHITE",
+     "rating": 0.586556
+    },
+    {
+     "title": "世界の果てに約束の凱歌を -DDR Extended Megamix-",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.591129
+    },
+    {
+     "title": "ΔMAX",
+     "difficulty": "CHALLENGE",
+     "category": "CLASSIC",
+     "rating": 0.59756
+    }
+   ]
+  },
+  {
+   "name": "17.85",
+   "charts": [
+    {
+     "title": "患部で止まってすぐ溶ける～狂気の優曇華院",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.626265
+    },
+    {
+     "title": "Superior MAXXX",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.645264
+    },
+    {
+     "title": "コメット⇒スケイター",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.657438
+    },
+    {
+     "title": "Steps for Victory",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.660746
+    },
+    {
+     "title": "新蛇姫",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.686043
+    }
+   ]
+  },
+  {
+   "name": "17.90",
+   "charts": [
+    {
+     "title": "Jucunda Memoria",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.705444
+    },
+    {
+     "title": "最小三倍完全数",
+     "difficulty": "EXPERT",
+     "category": "GOLD",
+     "rating": 0.736803
+    },
+    {
+     "title": "Blφφdy Cφncertφ",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.764024
+    },
+    {
+     "title": "Pluto The First",
+     "difficulty": "EXPERT",
+     "category": "CLASSIC",
+     "rating": 0.766175
+    }
+   ]
+  },
+  {
+   "name": "17.95",
+   "charts": [
+    {
+     "title": "量子の海のリントヴルム (STARDOM Remix)",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.843738
+    },
+    {
+     "title": "Concertino in Blue",
+     "difficulty": "CHALLENGE",
+     "category": "GOLD",
+     "rating": 0.844679
+    }
+   ]
+  }
+ ]
+}

@@ -26,14 +26,14 @@ input[type=checkbox]{vertical-align:middle}
 <h1>DDR Flare Memo</h1>
 <div id="summary" class="sub"></div>
 
-<h2>Lv16 サジェスト</h2>
+<h2>サジェスト <select id="level"><option>16</option><option>17</option></select></h2>
 <div>
   <label>除外: <select id="exclRank"><option value="99">しない</option><option value="10">フレアEX</option><option value="9" selected>フレアIX以上</option><option value="8">フレアVIII以上</option><option value="7">フレアVII以上</option></select></label>
   <label><input type="checkbox" id="excludeIn"> フレア対象（TOP30）入りの曲を除外</label>
   <label>カテゴリ <select id="cat"><option value="">全部</option><option>CLASSIC</option><option>WHITE</option><option>GOLD</option></select></label>
   <label>表示数 <select id="limit"><option>10</option><option selected>20</option><option>50</option><option value="9999">全部</option></select></label>
 </div>
-<p class="sub">3icecream の難易度表（16.00 が最も易しい）の易しい順に並べています。各行のプルダウンで取得済みフレアランクを指定できます（このブラウザに保存）。</p>
+<p class="sub">3icecream の難易度表（xx.00 が最も易しい）の易しい順に並べています。各行のプルダウンで取得済みフレアランクを指定できます（このブラウザに保存）。</p>
 <div id="suggest"></div>
 
 <h2>難易度表を取り込む</h2>
@@ -139,22 +139,28 @@ document.getElementById('importRanks').onchange=async e=>{
 document.getElementById('import').onclick=()=>{
   const tiers=parseTable(document.getElementById('paste').value);
   if(!tiers.length) return;
-  table={...table,tiers}; LS.set('lv16',table);
+  table={...table,tiers}; LS.set('lv'+level(),table);
   document.getElementById('msg').textContent=`${tiers.length}段 / ${tiers.reduce((a,t)=>a+t.charts.length,0)}譜面を取り込みました`;
   render();
 };
-document.getElementById('reset').onclick=async()=>{try{localStorage.removeItem('lv16')}catch{} table=await (await fetch('data/lv16.json')).json(); render()};
+document.getElementById('reset').onclick=async()=>{try{localStorage.removeItem('lv'+level())}catch{} await loadTable(true)};
+const level=()=>document.getElementById('level').value;
+async function loadTable(ignoreSaved){
+  const base=await (await fetch(`data/lv${level()}.json`)).json();
+  const saved=ignoreSaved?null:LS.get('lv'+level(),null);
+  table = saved&&saved.tiers?.length ? saved : base;
+  LS.set('level',level()); render();
+}
+document.getElementById('level').onchange=()=>loadTable();
 ['exclRank','excludeIn','limit','cat'].forEach(id=>document.getElementById(id).onchange=render);
 
 (async()=>{
   skill=await (await fetch('data/flare_skill.json')).json();
-  const base=await (await fetch('data/lv16.json')).json();
-  const saved=LS.get('lv16',null);
   let fileRanks={}; try{fileRanks=await (await fetch('data/flare_ranks.json')).json()}catch{}
   const old=LS.get('flare9',{}); for(const k in old) fileRanks[k]=Math.max(fileRanks[k]??0,9);
   ranks={...fileRanks,...LS.get('flareRanks',{})};
-  table = saved&&saved.tiers?.length ? saved : base;
-  renderCurrent(); render();
+  document.getElementById("level").value=LS.get("level","16");
+  renderCurrent(); await loadTable();
 })();
 </script>
 </body>
