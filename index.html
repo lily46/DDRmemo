@@ -27,7 +27,7 @@ input[type=checkbox]{vertical-align:middle}
 <h1>DDR Flare Memo</h1>
 <div id="summary" class="sub"></div>
 
-<h2>サジェスト <select id="level"><option>16</option><option>17</option></select></h2>
+<h2>サジェスト <select id="level"><option>15</option><option>16</option><option>17</option></select></h2>
 <div>
   <label>除外: <select id="exclRank"><option value="99">しない</option><option value="10">フレアEX</option><option value="9" selected>フレアIX以上</option><option value="8">フレアVIII以上</option><option value="7">フレアVII以上</option></select></label>
   <label><input type="checkbox" id="excludeIn"> フレア対象（TOP30）入りの曲を除外</label>
@@ -168,7 +168,8 @@ async function loadTable(ignoreSaved){
   table = saved&&saved.tiers?.length ? saved : base;
   LS.set('level',level()); render();
 }
-document.getElementById('level').onchange=()=>loadTable();
+// Lv15 は IX→EX の上げ直しが狙いなので、除外を EX のみに切り替える
+document.getElementById('level').onchange=()=>{document.getElementById('exclRank').value=level()==='15'?'10':'9'; loadTable()};
 ['exclRank','excludeIn','limit','cat'].forEach(id=>document.getElementById(id).onchange=render);
 
 (async()=>{
@@ -179,6 +180,7 @@ document.getElementById('level').onchange=()=>loadTable();
   let fileScores={}; try{fileScores=await (await fetch('data/scores.json')).json()}catch{}
   scores={...fileScores,...LS.get('scores',{})};
   document.getElementById("level").value=LS.get("level","16");
+  if(level()==="15") document.getElementById("exclRank").value="10";
   renderCurrent(); await loadTable();
 })();
 </script>
