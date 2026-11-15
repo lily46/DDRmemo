@@ -23,7 +23,7 @@
  "abyss|CHALLENGE": 9,
  "getbackup!|CHALLENGE": 9,
  "quickmaster|CHALLENGE": 9,
- "bre∀kdown!|CHALLENGE": 9,
+ "bre∀kdown!|CHALLENGE": 10,
  "osakaevolved-毎度、おおきに!-(type1)|EXPERT": 9,
  "osakaevolved-毎度、おおきに!-(type2)|EXPERT": 9,
  "belovin|CHALLENGE": 9,
@@ -53,7 +53,7 @@
  "エンドルフィン|EXPERT": 9,
  "thereason|CHALLENGE": 9,
  "astrogazer|EXPERT": 9,
- "激アツ☆マジヤバ☆チアガール|CHALLENGE": 9,
+ "激アツ☆マジヤバ☆チアガール|CHALLENGE": 10,
  "stellasinistra|EXPERT": 9,
  "emera|EXPERT": 9,
  "outoffocus|EXPERT": 9,
@@ -117,5 +117,7 @@
  "未来(ダ)future|EXPERT": 10,
  "スカーレット警察のゲットーパトロール24時|EXPERT": 10,
  "programmeduniverse|CHALLENGE": 9,
- "gototheoasis|EXPERT": 9
+ "gototheoasis|EXPERT": 9,
+ "takeastepforward|CHALLENGE": 10,
+ "hopeful|CHALLENGE": 10
 }
