@@ -106,7 +106,7 @@
  "クリムゾンゲイト|CHALLENGE": 9,
  "bossrush|EXPERT": 6,
  "illegalfunctioncall|EXPERT": 6,
- "awake|CHALLENGE": 6,
+ "awake|CHALLENGE": 8,
  "snowgarlandfairy|EXPERT": 8,
  "アキネイション|EXPERT": 8,
  "harmonia|CHALLENGE": 9,
@@ -121,5 +121,6 @@
  "takeastepforward|CHALLENGE": 10,
  "hopeful|CHALLENGE": 10,
  "び|EXPERT": 9,
- "めうめうぺったんたん!!|CHALLENGE": 9
+ "めうめうぺったんたん!!|CHALLENGE": 9,
+ "digitalizer|EXPERT": 6
 }
