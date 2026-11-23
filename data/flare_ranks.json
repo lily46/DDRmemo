@@ -103,7 +103,7 @@
  "screw//owo//screw|EXPERT": 8,
  "grip&breakdown!!|CHALLENGE": 4,
  "轟け!恋のビーンボール!!|EXPERT": 4,
- "クリムゾンゲイト|CHALLENGE": 8,
+ "クリムゾンゲイト|CHALLENGE": 9,
  "bossrush|EXPERT": 6,
  "illegalfunctioncall|EXPERT": 6,
  "awake|CHALLENGE": 6,
@@ -119,5 +119,7 @@
  "programmeduniverse|CHALLENGE": 9,
  "gototheoasis|EXPERT": 9,
  "takeastepforward|CHALLENGE": 10,
- "hopeful|CHALLENGE": 10
+ "hopeful|CHALLENGE": 10,
+ "び|EXPERT": 9,
+ "めうめうぺったんたん!!|CHALLENGE": 9
 }
